@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="company" resource="default" engine="innodb" comment="Company Table">
+        <column xsi:type="varchar" name="erp_account_code" nullable="true" length="32" comment="erp account code"/>
+        <column xsi:type="varchar" name="customer_class_id1" nullable="false" length="32" comment="customer class id1"/>
+        <column xsi:type="varchar" name="customer_class_id2" nullable="false" length="32" comment="customer class id2"/>
+        <column xsi:type="varchar" name="customer_class_id3" nullable="false" length="32" comment="customer class id3"/>
+        <column xsi:type="varchar" name="customer_class_id4" nullable="false" length="32" comment="customer class id4"/>
+        <column xsi:type="varchar" name="customer_class_id5" nullable="false" length="32" comment="customer class id5"/>
+        <column xsi:type="smallint" name="customer_delete_flag" unsigned="false" nullable="false"
+                identity="false" default="0" comment="customer delete flag"/>
+        <column xsi:type="smallint" name="customer_web_enabled_flag" unsigned="false" nullable="false"
+                identity="false" default="0" comment="customer web enabled flag"/>
+        <column xsi:type="varchar" name="resale_certificate" nullable="false" length="32" comment="resale certificate"/>
+        <column xsi:type="varchar" name="invoice_type" nullable="false" length="32" comment="invoice type"/>
+        <constraint xsi:type="unique" referenceId="COMPANY_ERP_ACCOUNT_CODE">
+            <column name="erp_account_code"/>
+        </constraint>
+    </table>
+</schema>

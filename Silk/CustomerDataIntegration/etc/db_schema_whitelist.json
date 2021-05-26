@@ -1,0 +1,19 @@
+{
+    "company": {
+        "column": {
+            "erp_account_code": true,
+            "customer_class_id1": true,
+            "customer_class_id2": true,
+            "customer_class_id3": true,
+            "customer_class_id4": true,
+            "customer_class_id5": true,
+            "customer_delete_flag": true,
+            "customer_web_enabled_flag": true,
+            "resale_certificate": true,
+            "invoice_type": true
+        },
+        "constraint": {
+            "COMPANY_ERP_ACCOUNT_CODE": true
+        }
+    }
+}

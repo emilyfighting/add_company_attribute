@@ -1,0 +1,150 @@
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general" sortOrder="10">
+    </fieldset>
+    <fieldset name="erp_attributes" sortOrder="100">
+        <settings>
+            <collapsible>true</collapsible>
+            <label translate="true">ERP Attributes</label>
+            <dataScope>erp_attributes</dataScope>
+        </settings>
+        <field name="erp_account_code" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">erp_account_code</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Erp Account Code</label>
+            </settings>
+        </field>
+        <field name="customer_class_id1" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">customer_class_id1</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Customer Class Id1</label>
+            </settings>
+        </field>
+        <field name="customer_class_id2" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">customer_class_id2</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Customer Class Id2</label>
+            </settings>
+        </field>
+        <field name="customer_class_id3" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">customer_class_id3</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Customer Class Id3</label>
+            </settings>
+        </field>
+        <field name="customer_class_id4" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">customer_class_id4</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Customer Class Id4</label>
+            </settings>
+        </field>
+        <field name="customer_class_id5" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">customer_class_id5</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Customer Class Id5</label>
+            </settings>
+        </field>
+
+        <field name="customer_delete_flag" formElement="checkbox">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="boolean">0</item>
+                    <item name="source" xsi:type="string">customer_delete_flag</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Customer Delete Flag</label>
+                <dataScope>customer_delete_flag</dataScope>
+            </settings>
+            <formElements>
+                <checkbox>
+                    <settings>
+                        <options class="Silk\CustomerDataIntegration\Model\Config\Source\YesNo"/>
+                        <valueMap>
+                            <map name="false" xsi:type="boolean">0</map>
+                            <map name="true" xsi:type="boolean">1</map>
+                        </valueMap>
+                        <prefer>toggle</prefer>
+                    </settings>
+                </checkbox>
+            </formElements>
+        </field>
+
+        <field name="customer_web_enabled_flag" formElement="checkbox">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="default" xsi:type="boolean">0</item>
+                    <item name="source" xsi:type="string">customer_web_enabled_flag</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Customer Web Enabled Flag</label>
+                <dataScope>customer_web_enabled_flag</dataScope>
+            </settings>
+            <formElements>
+                <checkbox>
+                    <settings>
+                        <options class="Silk\CustomerDataIntegration\Model\Config\Source\YesNo"/>
+                        <valueMap>
+                            <map name="false" xsi:type="boolean">0</map>
+                            <map name="true" xsi:type="boolean">1</map>
+                        </valueMap>
+                        <prefer>toggle</prefer>
+                    </settings>
+                </checkbox>
+            </formElements>
+        </field>
+
+        <field name="resale_certificate" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">resale_certificate</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Resale Certificate</label>
+            </settings>
+        </field>
+        <field name="invoice_type" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">invoice_type</item>
+                </item>
+            </argument>
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Invoice Type</label>
+            </settings>
+        </field>
+    </fieldset>
+</form>
